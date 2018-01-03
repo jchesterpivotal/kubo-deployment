@@ -1,0 +1,11 @@
+- type: replace
+  path: /http_proxy?
+  value: ((http_proxy))
+
+- type: replace
+  path: /https_proxy?
+  value: ((https_proxy))
+
+- type: replace
+  path: /no_proxy?
+  value: ((no_proxy))

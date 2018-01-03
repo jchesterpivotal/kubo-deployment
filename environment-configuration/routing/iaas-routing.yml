@@ -1,0 +1,15 @@
+_ type: replace
+  path: /routing_mode?
+  value: iaas
+
+_ type: replace
+  path: /kubernetes_master_host?
+  value: ((kubernetes_master_host))
+
+_ type: replace
+  path: /master_target_pool?
+  value: ((master_target_pool))
+
+_ type: replace
+  path: /worker_target_pool?
+  value: ((worker_target_pool))

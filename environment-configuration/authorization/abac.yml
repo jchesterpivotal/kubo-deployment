@@ -1,0 +1,3 @@
+- type: replace
+  path: /authorization_mode?
+  value: abac

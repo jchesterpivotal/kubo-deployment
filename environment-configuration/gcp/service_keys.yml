@@ -1,0 +1,15 @@
+# service keys to be deployed to  master vms. This is ignored if service_account_master is set
+- type: replace
+  path: /gcp_service_key_master?
+  value: ((gcp_service_key_master))
+
+- type: remove
+  path: /service_account_master?
+
+# service keys to be deployed to  master vms. This is ignored if service_account_master is set
+- type: replace
+  path: /gcp_service_key_worker?
+  value: ((gcp_service_key_worker))
+
+- type: remove
+  path: /service_account_worker?

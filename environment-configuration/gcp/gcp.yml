@@ -1,0 +1,29 @@
+- type: replace
+  path: /project_id?
+  value: ((gcp_project_id))
+
+- type: replace
+  path: /network?
+  value: ((gcp_network))
+
+- type: replace
+  path: /subnetwork?
+  value: ((gcp_subnetwork))
+
+- type: replace
+  path: /tags?
+  value:
+    - "no_ip"
+    - internal
+
+- type: replace
+  path: /zone?
+  value: ((gcp_zone))
+
+- type: replace
+  path: /service_account_master?
+  value: ((service_account_master))
+
+- type: replace
+  path: /service_account_worker?
+  value: ((service_account_worker))

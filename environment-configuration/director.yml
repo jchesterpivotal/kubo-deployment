@@ -1,0 +1,8 @@
+internal_ip: ((internal_ip)) # Internal ip address of the BOSH director. Please select an available ip address in the network you wish to deploy into.
+internal_cidr: ((internal_cidr)) # CIDR range that BOSH will deploy to
+internal_gw: ((internal_gw)) # internal gateway
+director_name: ((director_name)) # user friendly Director name
+dns_recursor_ip: ((dns_recursor_ip)) # DNS IP address for resolving non-BOSH hostnames
+kubo_release_url: https://storage.googleapis.com/kubo-public/kubo-release-latest.tgz
+worker_count: 3
+
