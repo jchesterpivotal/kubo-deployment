@@ -15,6 +15,10 @@
   value: [z1]
 
 - type: replace
+  path: /instance_groups/name=apply-specs?/azs
+  value: [z1]
+
+- type: replace
   path: /instance_groups/name=worker/vm_type
   value: worker
 

@@ -1,7 +1,13 @@
 - type: replace
-  path: /instance_groups/name=master/jobs/-
+  path: /instance_groups/-
   value:
     name: apply-specs
-    release: kubo
-    properties:
-      addons-spec: ((addons-spec))
+    azs: [z1,z2,z3]
+    lifecycle: errand
+    instances: 1
+    jobs:
+    - name: apply-specs
+      release: kubo
+      properties:
+        addons-spec: ((addons-spec))
+
